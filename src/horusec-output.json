@@ -1,0 +1,137 @@
+{
+  "issues": [
+    {
+      "type": "VULNERABILITY",
+      "ruleId": "HorusecLeaks",
+      "engineId": "horusec",
+      "severity": "BLOCKER",
+      "effortMinutes": 0,
+      "primaryLocation": {
+        "message": "Hard-coded password\nThe software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 (https://cwe.mitre.org/data/definitions/798.html) advisory.",
+        "filepath": "002-open-keys/script.py",
+        "textRange": {
+          "startLine": 4,
+          "endLine": 5,
+          "startColumn": 4,
+          "endColumn": 0
+        },
+        "filePath": "002-open-keys/script.py"
+      },
+      "secondaryLocations": null
+    },
+    {
+      "type": "VULNERABILITY",
+      "ruleId": "HorusecLeaks",
+      "engineId": "horusec",
+      "severity": "BLOCKER",
+      "effortMinutes": 0,
+      "primaryLocation": {
+        "message": "Password found in a hardcoded URL\nA password was found in a hardcoded URL, this can lead to not only the leak of this password but also a failure point to some more sophisticated CSRF and SSRF attacks. Check CWE-352 (https://cwe.mitre.org/data/definitions/352.html) and CWE-918 (https://cwe.mitre.org/data/definitions/918.html) for more details.",
+        "filepath": "002-open-keys/script.py",
+        "textRange": {
+          "startLine": 3,
+          "endLine": 4,
+          "startColumn": 7,
+          "endColumn": 0
+        },
+        "filePath": "002-open-keys/script.py"
+      },
+      "secondaryLocations": null
+    },
+    {
+      "type": "VULNERABILITY",
+      "ruleId": "Bandit",
+      "engineId": "horusec",
+      "severity": "BLOCKER",
+      "effortMinutes": 0,
+      "primaryLocation": {
+        "message": "Starting a process with a shell, possible injection detected, security issue.",
+        "filepath": "005-os-command-injection/script.py",
+        "textRange": {
+          "startLine": 6,
+          "endLine": 7,
+          "startColumn": 0,
+          "endColumn": 0
+        },
+        "filePath": "005-os-command-injection/script.py"
+      },
+      "secondaryLocations": null
+    },
+    {
+      "type": "VULNERABILITY",
+      "ruleId": "Bandit",
+      "engineId": "horusec",
+      "severity": "MAJOR",
+      "effortMinutes": 0,
+      "primaryLocation": {
+        "message": "Possible SQL injection vector through string-based query construction.",
+        "filepath": "001-sql-injection/script.py",
+        "textRange": {
+          "startLine": 8,
+          "endLine": 9,
+          "startColumn": 0,
+          "endColumn": 0
+        },
+        "filePath": "001-sql-injection/script.py"
+      },
+      "secondaryLocations": null
+    },
+    {
+      "type": "VULNERABILITY",
+      "ruleId": "Bandit",
+      "engineId": "horusec",
+      "severity": "MAJOR",
+      "effortMinutes": 0,
+      "primaryLocation": {
+        "message": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+        "filepath": "004-command-injection/script.py",
+        "textRange": {
+          "startLine": 3,
+          "endLine": 4,
+          "startColumn": 0,
+          "endColumn": 0
+        },
+        "filePath": "004-command-injection/script.py"
+      },
+      "secondaryLocations": null
+    },
+    {
+      "type": "VULNERABILITY",
+      "ruleId": "Bandit",
+      "engineId": "horusec",
+      "severity": "MAJOR",
+      "effortMinutes": 0,
+      "primaryLocation": {
+        "message": "Use of exec detected.",
+        "filepath": "004-command-injection/script.py",
+        "textRange": {
+          "startLine": 6,
+          "endLine": 7,
+          "startColumn": 0,
+          "endColumn": 0
+        },
+        "filePath": "004-command-injection/script.py"
+      },
+      "secondaryLocations": null
+    },
+    {
+      "type": "VULNERABILITY",
+      "ruleId": "Bandit",
+      "engineId": "horusec",
+      "severity": "MINOR",
+      "effortMinutes": 0,
+      "primaryLocation": {
+        "message": "Possible hardcoded password: 'mycoolpassword'",
+        "filepath": "002-open-keys/script.py",
+        "textRange": {
+          "startLine": 4,
+          "endLine": 5,
+          "startColumn": 0,
+          "endColumn": 0
+        },
+        "filePath": "002-open-keys/script.py"
+      },
+      "secondaryLocations": null
+    }
+  ]
+}
